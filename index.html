@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAN 1 Tasikmalaya - Madrasah Hebat Bermartabat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di MAN 1 Tasikmalaya</h1>
+        <img src="logo.png" alt="Logo MAN 1 Tasikmalaya" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('profil')">Profil</a></li>
+                <li><a href="#" onclick="showPage('visiMisi')">Visi & Misi</a></li>
+                <li><a href="#" onclick="showPage('programStudi')">Program Studi</a></li>
+                <li><a href="#" onclick="showPage('galeri')">Galeri</a></li>
+                <li><a href="#" onclick="showPage('berita')">Berita</a></li>
+                <li><a href="#" onclick="showPage('bukuTamu')">Buku Tamu</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="page">
+            <h2>Madrasah Hebat Bermartabat</h2>
+            <p>MAN 1 Tasikmalaya berkomitmen untuk mencetak generasi berprestasi dan bermartabat.</p>
+            <img src="Home.jpg" alt="Mansatas">
+        </section>
+
+        <section id="profil" class="page" style="display: none;">
+            <h2>Profil MAN 1 Tasikmalaya</h2>
+            <p>MAN 1 Tasikmalaya adalah madrasah yang fokus pada pendidikan berbasis nilai agama dan ilmu pengetahuan. MAN 1 Tasikmalaya merupakan sekolah menengah umum yang berciri khas agama Islam sebagai alih fungsi dari PGAN Sukamanah dengan legalitas hukum berdasarkan Surat Keputusan Menteri Agama RI Nomor 64 Tahun 1990 dan selanjutnya ditetapkan menjadi MAN Sukamanah dengan Surat Keputusan Menteri Agama Nomor 42 Tahun 1992 dengan NPSN: 20276807 dan NSM: 131132060006.</p>
+            <p>Pada tahun 2015 sesuai Surat Keputusan Menteri Agama RI Nomor 212 Tahun 2015 tentang perubahan nama Madrasah di Provinsi Jawa Barat. MAN Sukamanah berubah nama menjadi MAN 1 Tasikmalaya. MAN 1 Tasikmalaya telah terakreditasi dengan memperoleh nilai Akreditasi “A” berdasarkan Surat Keputusan dari Badan Akreditasi Provinsi dengan Nomor 02.00/112/BAP-SM/SR/X/201.</p>
+        </section>
+        
+        <section id="visiMisi" class="page" style="display: none;">
+            <h2>Visi dan Misi</h2>
+            <p><strong>Visi:</strong> Menjadi madrasah terdepan untuk mewujudkan generasi yang berkualitas tinggi dalam keimanan dan ketakwaan, menguasai ilmu pengetahuan dan teknologi serta mampu berkontribusi dalam kehidupan masyarakat (Beriman, Berilmu dan Beramal).</p>
+            
+            <p><strong>Misi:</strong></p>
+            <ol>
+                <li>Menyelenggarakan pendidikan yang berkualitas dalam pencapaian prestasi akademik dan non-akademik.</li>
+                <li>Mewujudkan pembelajaran dan pembiasaan dalam menjalankan ajaran agama secara utuh sesuai risalah Rasulullah SAW.</li>
+                <li>Meningkatkan pengetahuan dan profesionalisme tenaga pendidik dan tenaga kependidikan sesuai dengan perkembangan dunia pendidikan.</li>
+                <li>Mewujudkan pembentukan karakter umat yang mampu mengaktualisasikannya di dalam masyarakat dan bersinergi dengan semua pihak.</li>
+            </ol>
+        </section>        
+
+        <section id="programStudi" class="page" style="display: none;">
+            <h2>Program Studi</h2>
+            <p>Kami menawarkan program studi IPA, IPS, dan Agama yang terintegrasi dengan nilai-nilai keislaman.</p>
+        </section>
+
+        <section id="galeri" class="page" style="display: none;">
+            <h2>Galeri</h2>
+            <p>Berbagai kegiatan dan prestasi yang diraih oleh MAN 1 Tasikmalaya.</p>
+            <img src="kegiatan 1.jpg" alt="Kegiatan 1">
+            <img src="kegiatan 2.jpg " alt="Kegiatan 2">
+        </section>
+
+<section id="berita" class="page" style="display: none;">
+    <h2>Berita</h2>
+    <p>Informasi terbaru tentang kegiatan dan prestasi MAN 1 Tasikmalaya.</p>
+
+    
+    <div class="news-list">
+        <article class="news-item">
+            <img src="lomba 2.webp" alt="Thumbnail Berita 1" class="news-thumbnail">
+            <div class="news-content">
+                <h3>Judul Berita 1</h3>
+                <p class="news-date">5 November 2024</p>
+                <p class="news-excerpt">MAN 1 Tasikmalaya berhasil meraih banyak juara dalam lomba tingkat nasional</p>
+                <a href="#" class="read-more">Baca Selengkapnya</a>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <img src="lomba 1.webp" alt="Thumbnail Berita 2" class="news-thumbnail">
+            <div class="news-content">
+                <h3>Judul Berita 2</h3>
+                <p class="news-date">10 Oktober 2024</p>
+                <p class="news-excerpt">Siswa MAN 1 Tasikmalaya berhasil juara 1 lomba gansa persada di Hari Bhakti Adhyasa ke-64</p>
+                <a href="#" class="read-more">Baca Selengkapnya</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section id="bukuTamu" class="page" style="display: none;">
+    <h2>Buku Tamu</h2>
+    <form id="guestBookForm" onsubmit="submitForm(event)">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+        
+        <button type="submit">Kirim</button>
+    </form>
+
+    <div id="confirmationMessage" style="display: none; margin-top: 20px; color: green;">
+        Terima kasih! Pesan Anda telah berhasil dikirim.
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dede Muhamad Yusuf</p>
+    </footer>
+</body>
+</html>
